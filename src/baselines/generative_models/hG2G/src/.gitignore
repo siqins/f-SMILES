@@ -1,0 +1,9 @@
+*.pyc
+*model.iter*
+src/data/
+*LOG*
+results*
+model.*
+splits/
+*.pkl
+src/ckpt/

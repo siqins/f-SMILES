@@ -1,0 +1,26 @@
+{
+    "rnn_type": "LSTM",
+    "hidden_size": 250,
+    "embed_size": 250,
+    "batch_size": 50,
+    "latent_size": 32,
+    "depthT": 15,
+    "depthG": 15,
+    "diterT": 1,
+    "diterG": 3,
+    "dropout": 0.0,
+
+    "lr": 1e-3,
+    "clip_norm": 5.0,
+    "step_beta": 0.001,
+    "max_beta": 1.0,
+    "warmup": 10000,
+    "epoch": 20,
+
+    "anneal_rate": 0.9,
+    "anneal_iter": 25000,
+    "kl_anneal_iter": 2000,
+    "print_iter": 50,
+    "save_iter": 50,
+    "test_iter": 500
+}
