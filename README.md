@@ -109,15 +109,15 @@ smis = BatchSmilesFromFSmiles(fsmis)
 ```
 
 ### Download trained checkpoints (Optional)
-The trained models (343 MB) can be downloaded from [link](https://zenodo.org/records/18873932). You can create the target directory to store the trained models if you want to use them:
+The trained models can be downloaded from [link](https://zenodo.org/records/18873932). You can create the target directory to store the trained models if you want to use them:
 ```
 mkdir -p experiments
 ```
 
 ### Preparation of dataset (Optional)
-The raw dataset is the file [`fused_units.csv`](datasets/fused_units.csv), the dataset for distribution learning is the file [`fused_units_generated.csv`](datasets/fused_units_generated.csv), and the dataset for goal-oriented generation is the file [`fused_units_generated_calculated.csv`](datasets/fused_units_generated_calculated.csv).
+The raw dataset is the file [`fused_units.csv`](datasets/fused_units.csv), the dataset for distribution learning and representation learning is the file [`fused_units_generated.csv`](datasets/fused_units_generated.csv), and the dataset for goal-oriented generation is the file [`fused_units_generated_calculated.csv`](datasets/fused_units_generated_calculated.csv).
 
-If you want to organize dataset by yourself, you can run the script [`molecule_reconstruction.py`](scripts/molecule_reconstruction.py) and use the function prepare_generated_mol_dataset(). The file file [`fused_units_generated.csv`](datasets/fused_units_generated.csv) will then be saved. The scripts in the directory [`src/simulations`](src/simulations) are utilized to generate the file [`fused_units_generated_calculated.csv`](datasets/fused_units_generated_calculated.csv).
+If you want to organize dataset by yourself, you can run the script [`molecule_reconstruction.py`](scripts/molecule_reconstruction.py) and use the function prepare_generated_mol_dataset(). The file [`fused_units_generated.csv`](datasets/fused_units_generated.csv) will then be saved. The scripts in the directory [`src/simulations`](src/simulations) are utilized to generate the file [`fused_units_generated_calculated.csv`](datasets/fused_units_generated_calculated.csv).
 
 ### Instruction of scripts
 This option allows you to use the **scripts**, and all commands in this section are assumed to be run within the [`scripts`](scripts) directory. The calculated results will be saved in the [`experiments`](experiments) directory.
